@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURUM — Fine Watches, Perfumes & Studs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Announcement Bar ===== -->
+  <div class="announcement">
+    <p>Complimentary shipping on orders over $150 &nbsp;·&nbsp; Extended returns through January 31</p>
+  </div>
+
+  <!-- ===== Header / Nav ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="index.html" class="logo">AURUM<span class="logo-dot">.</span></a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="shop.html" class="nav-link">Watches</a>
+        <a href="shop.html?cat=perfumes" class="nav-link">Perfumes</a>
+        <a href="shop.html?cat=studs" class="nav-link">Studs</a>
+        <a href="index.html#about" class="nav-link">Maison</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Search Overlay ===== -->
+  <div class="search-overlay" id="searchOverlay">
+    <button class="search-close" id="searchClose" aria-label="Close search">&times;</button>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search watches, perfumes, studs…" autocomplete="off">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. 1987 — The House of Aurum</p>
+      <h1 class="hero-title">Timeless Luxury,<br><em>Crafted for You</em></h1>
+      <p class="hero-sub">An exquisite collection of Swiss timepieces, rare fragrances, and hand-set studs — curated for those who appreciate the finer details.</p>
+      <div class="hero-cta">
+        <a href="shop.html" class="btn btn-gold">Shop the Collection</a>
+        <a href="index.html#featured" class="btn btn-outline">Explore Featured</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== Categories ===== -->
+  <section class="section categories">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The Collections</p>
+        <h2 class="section-title">Shop by Category</h2>
+      </div>
+      <div class="cat-grid">
+        <a href="shop.html?cat=watches" class="cat-card">
+          <div class="cat-img cat-watches"></div>
+          <div class="cat-info">
+            <h3>Watches</h3>
+            <p>Swiss automatic & quartz</p>
+            <span class="cat-link">Discover →</span>
+          </div>
+        </a>
+        <a href="shop.html?cat=perfumes" class="cat-card">
+          <div class="cat-img cat-perfumes"></div>
+          <div class="cat-info">
+            <h3>Perfumes</h3>
+            <p>Eau de parfum & exclusives</p>
+            <span class="cat-link">Discover →</span>
+          </div>
+        </a>
+        <a href="shop.html?cat=studs" class="cat-card">
+          <div class="cat-img cat-studs"></div>
+          <div class="cat-info">
+            <h3>Studs</h3>
+            <p>Diamond & gold settings</p>
+            <span class="cat-link">Discover →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured Products ===== -->
+  <section class="section featured" id="featured">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Handpicked</p>
+        <h2 class="section-title">Featured Pieces</h2>
+        <a href="shop.html" class="view-all">View all →</a>
+      </div>
+      <div class="product-grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Craftsmanship Banner ===== -->
+  <section class="banner">
+    <div class="banner-bg"></div>
+    <div class="banner-content">
+      <p class="eyebrow gold">The Aurum Standard</p>
+      <h2>Three Generations of Master Craftsmanship</h2>
+      <p>Every piece in our collection is inspected by master artisans and certified for authenticity, quality, and enduring beauty.</p>
+      <a href="index.html#about" class="btn btn-gold">Our Story</a>
+    </div>
+  </section>
+
+  <!-- ===== About / Maison ===== -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <p class="eyebrow">The Maison</p>
+        <h2 class="section-title">A Legacy of Refinement</h2>
+        <p>Founded in Geneva in 1987, Aurum began as a single atelier dedicated to the art of fine watchmaking. Today, we house three distinct collections — timepieces, fragrances, and studs — each crafted with the same uncompromising standards.</p>
+        <p>Our perfumers source rare ingredients from Grasse, our gemologists hand-select every stone, and our watchmakers assemble each movement by hand. The result: objects of desire built to last generations.</p>
+        <div class="stats">
+          <div class="stat"><span class="stat-num">38</span><span class="stat-label">Years of Heritage</span></div>
+          <div class="stat"><span class="stat-num">12k+</span><span class="stat-label">Pieces Crafted</span></div>
+          <div class="stat"><span class="stat-num">40+</span><span class="stat-label">Countries Served</span></div>
+        </div>
+      </div>
+      <div class="about-img"></div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Client Voices</p>
+        <h2 class="section-title">What Our Clients Say</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"The Meridian Chronograph is the finest watch I've ever owned. The finishing is impeccable and it keeps perfect time."</p>
+          <div class="testimonial-author">
+            <div class="avatar">JK</div>
+            <div><strong>James Keller</strong><span>New York</span></div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Noir Absolu is unlike any fragrance I've worn. The oud and bergamot blend is mesmerizing — I get compliments daily."</p>
+          <div class="testimonial-author">
+            <div class="avatar">SL</div>
+            <div><strong>Sophie Laurent</strong><span>Paris</span></div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"The diamond studs are flawless. The setting is secure, the sparkle is incredible, and the packaging was a work of art."</p>
+          <div class="testimonial-author">
+            <div class="avatar">AR</div>
+            <div><strong>Amara Rahman</strong><span>Dubai</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Newsletter ===== -->
+  <section class="section newsletter">
+    <div class="container newsletter-inner">
+      <h2>Join the Aurum Circle</h2>
+      <p>Be the first to know about new arrivals, private sales, and exclusive events.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit" class="btn btn-gold">Subscribe</button>
+      </form>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="logo">AURUM<span class="logo-dot">.</span></a>
+        <p>Fine watches, rare perfumes, and hand-set studs — crafted with uncompromising standards since 1987.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="shop.html?cat=watches">Watches</a>
+        <a href="shop.html?cat=perfumes">Perfumes</a>
+        <a href="shop.html?cat=studs">Studs</a>
+        <a href="shop.html">All Products</a>
+      </div>
+      <div class="footer-col">
+        <h4>Maison</h4>
+        <a href="index.html#about">Our Story</a>
+        <a href="#">Craftsmanship</a>
+        <a href="#">Certifications</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Size Guide</a>
+        <a href="#">FAQ</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aurum. All rights reserved.</p>
+      <div class="payment-icons">
+        <span>VISA</span><span>MC</span><span>AMEX</span><span>PAYPAL</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Cart Drawer ===== -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-head">
+      <h3>Your Cart</h3>
+      <button class="drawer-close" id="drawerClose" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-foot" id="cartFooter">
+      <div class="cart-total"><span>Subtotal</span><strong id="cartTotal">$0.00</strong></div>
+      <p class="cart-note">Shipping & taxes calculated at checkout</p>
+      <a href="cart.html" class="btn btn-gold btn-block">View Cart</a>
+      <a href="cart.html" class="btn btn-outline btn-block">Checkout</a>
+    </div>
+  </aside>
+
+  <!-- ===== Quick View Modal ===== -->
+  <div class="modal-overlay" id="quickViewOverlay">
+    <div class="modal" id="quickViewModal">
+      <button class="modal-close" id="quickViewClose" aria-label="Close">&times;</button>
+      <div class="modal-body" id="quickViewBody"></div>
+    </div>
+  </div>
+
+  <!-- ===== Toast ===== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
